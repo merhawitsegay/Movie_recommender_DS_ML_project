@@ -25,7 +25,7 @@
 
 #content {
 	background-image: url("static/image.jpg");
-	background-color: #5d64e7;
+	background-color: #080920;
 	font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .footer {
-	color: #ea7f21;
+	color: #371e05;
 	text-align:right;
 	position: fixed;
  	bottom: 20px;
@@ -44,7 +44,7 @@
 
 h1 {
     font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #590c10;
+    color: #626a67;
     font-weight: bold;
     margin-top: 30px;
     text-shadow: #424040 0px 0px 13px;
@@ -105,7 +105,7 @@ h6 {
 		background-image: url("static/loader.gif");
 		background-size: 40%;
 		background-position: 50% 50%;
-		background-color: rgb(219, 214, 249);
+		background-color: rgb(13, 19, 65);
 		background-repeat: no-repeat;
 		-webkit-transition: background-image 0.2s ease-in-out;
 		transition: background-image 0.2s ease-in-out;
@@ -164,7 +164,7 @@ h6 {
 		background-image: url("static/loader.gif");
 		background-size: 20%;
 		background-position: 50% 50%;
-		background-color: rgba(255, 255, 255, 1);
+		background-color: rgb(98, 98, 136);
 		background-repeat: no-repeat;
 		-webkit-transition: background-image 0.2s ease-in-out;
 		transition: background-image 0.2s ease-in-out;

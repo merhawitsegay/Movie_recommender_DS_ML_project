@@ -105,6 +105,30 @@
       {% endfor %}
     </div>
 {% endif %}
+      {% if movie_cards|length > 1 %}
+
+
+      <div class="movie" style="color: #E8E8E8;">
+      <center><h2>RECOMMENDED MOVIES FOR YOU</h2><h6>(Click any of the movies to get recommendation)</h5></center>
+    </div>
+
+    <div class="movie-content">
+      {% for poster, title in movie_cards.items() if not movie_cards.hidden %}
+        <div class="card" style="width: 15rem;" title="{{title}}" onclick="recommendcard(this)">
+          <div class="imghvr">
+            <img class="card-img-top" height="360" width="240" alt="{{title}} - poster" src={{poster}}>
+            <figcaption class="fig">
+              <button class="card-btn btn btn-danger"> Click Me </button>
+            </figcaption>
+           </div>
+          <div class="card-body">
+            <h5 class="card-title">{{title|capitalize}}</h5>
+          </div>
+        </div>
+    {% endfor %}
+    </div>
+
+    {% endif %}
 
   <center>
     {% if reviews %}
@@ -143,7 +167,7 @@
     {% endif %}
   </center>
 
-      {% if movie_cards|length > 1 %}
+      <!-- {% if movie_cards|length > 1 %}
 
 
       <div class="movie" style="color: #E8E8E8;">
@@ -166,7 +190,7 @@
     {% endfor %}
     </div>
 
-    {% endif %}
+    {% endif %} -->
 
     
     </div>
